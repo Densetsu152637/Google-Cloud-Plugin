@@ -18,6 +18,17 @@ codex
 
 The token is short lived (normally one hour). When it expires, get a fresh token, update the environment, and restart the Codex session so the MCP connection uses it. Do not paste tokens into prompts, commit them, or store them in this repository. The plugin configuration expects the bearer token in `GOOGLE_CLOUD_MCP_TOKEN`.
 
+## Install from this local checkout
+
+From the repository root, register the included local marketplace and install the plugin:
+
+```powershell
+codex plugin marketplace add .
+codex plugin add google-cloud --marketplace google-cloud-local
+```
+
+The marketplace points to this checkout, so Codex loads the plugin files directly from this directory. The plugin includes the `google-cloud-deploy` skill for Cloud Run and Compute Engine deployments and the `cloud-run-troubleshoot` skill for read-only diagnosis of existing Cloud Run services. Review each skill before authorizing changes. To confirm the installation, run `codex plugin list`.
+
 The official MCP setup guidance also shows an optional `x-goog-user-project` header for quota attribution. Use a project you are authorized to bill for quota when the request requires it; this does not select the target deployment project. See Google's [MCP authentication setup](https://docs.cloud.google.com/mcp/set-up-authentication-mcp-servers).
 
 ## Endpoints and location selection
