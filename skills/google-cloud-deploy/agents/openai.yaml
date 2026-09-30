@@ -1,0 +1,3 @@
+interface:
+  display_name: "Google Cloud Deploy"
+  short_description: "Deploy Cloud Run services and Compute Engine VMs"
