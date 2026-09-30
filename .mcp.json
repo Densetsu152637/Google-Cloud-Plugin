@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "cloud_run": {
+      "type": "http",
+      "url": "https://run.googleapis.com/mcp",
+      "bearer_token_env_var": "GOOGLE_CLOUD_MCP_TOKEN"
+    },
+    "compute_engine": {
+      "type": "http",
+      "url": "https://compute.googleapis.com/mcp",
+      "bearer_token_env_var": "GOOGLE_CLOUD_MCP_TOKEN"
+    }
+  }
+}

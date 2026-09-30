@@ -1,0 +1,22 @@
+{
+  "name": "google-cloud",
+  "version": "0.1.0",
+  "description": "Guided workflows for deploying applications to Google Cloud Run and Compute Engine.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Google Cloud",
+    "shortDescription": "Deploy applications to Google Cloud.",
+    "longDescription": "Guided deployment workflows for Cloud Run services and Compute Engine virtual machines, using Google's official remote MCP servers.",
+    "developerName": "Local developer",
+    "category": "Developer tools",
+    "capabilities": [
+      "Deploy applications to Cloud Run",
+      "Manage Compute Engine virtual machines"
+    ],
+    "defaultPrompt": "Help me plan or deploy an application to Cloud Run or Compute Engine."
+  },
+  "mcpServers": "./.mcp.json"
+}
